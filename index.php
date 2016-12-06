@@ -1,5 +1,8 @@
 <?php
 
+    // Site information
+    $title = "Quadractic Calculator"
+
     // Declaring Varriables
     $x1 = $_GET['x1'];
     $y1 = $_GET['y1'];
@@ -37,10 +40,23 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <style>
+            header {
+                width: 100%;
+                height: 50px;
+                line-height: 50px;
+                color: rgba(0,0,0,0.8);
+                background-color: #fafafa;
+                font-size: 24p;
+            }
+        
+        
+        </style>
         <meta charset="utf-8" />
         <title>Quadractic Calculator</title>
     </head>
     <body>
+        <header></header>
         <form method="GET" action="index.php">
             <input type="text" value="<?php $a ?>" name="x1" />
             <input type="text" value="<?php $b ?>" name="y1" />
