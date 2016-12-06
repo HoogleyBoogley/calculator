@@ -4,10 +4,9 @@
     $title = "Quadractic Calculator"
 
     // Declaring Varriables
-    $x1 = $_GET['x1'];
-    $y1 = $_GET['y1'];
-    $x2 = $_GET['x2'];
-    $y2 = $_GET['y2'];
+    $a = $_GET['a'];
+    $b = $_GET['b'];
+    $c = $_GET['c'];
 
     // Doing the math
     // Quadratics
@@ -58,12 +57,10 @@
     <body>
         <header></header>
         <form method="GET" action="index.php">
-            <input type="text" value="<?php $a ?>" name="x1" />
-            <input type="text" value="<?php $b ?>" name="y1" />
-            <input type="text" value="<?php $c ?>" name="x2" />
-            <input type="text" value="<?php $c ?>" name="y2" />
+            <input type="text" value="<?php $a ?>" name="a" />
+            <input type="text" value="<?php $b ?>" name="b" />
+            <input type="text" value="<?php $c ?>" name="c" />
             <input type="submit" name="submit" />
         </form>
-        <img src=""
     </body>
 </html>
