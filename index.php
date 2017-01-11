@@ -11,7 +11,7 @@
     // Doing the math
     // Quadratics
     $neg_b = $b * -1;
-    $two_b = $b * 2;
+    $two_b = $b * $b;
     $ac = $a * $c;
     $four_ac = $ac * 4;
     $sqrt = $two_b - $four_ac;
