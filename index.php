@@ -1,10 +1,19 @@
 <?php
 
+# Is the button pressed
 if (isset(go) {
-  if ( ) {
+  
+  # Is it on distance?
+  if () {
   
   } else {
-  
+    
+    # Is it on quadratic?
+    if () {
+    
+    } else {
+    
+    };
   };
 };
 ?>
