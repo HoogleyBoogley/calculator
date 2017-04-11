@@ -3,16 +3,29 @@
 # Is the button pressed
 if (isset(go) {
   
-  # Is it on distance?
-  if () {
+  $dest = $_GET['link'];
+  
+  # Is it on quadratic(1)?
+  if (1 == $dest) {
+    header('Location: quadratic.php');
+    die;
   
   } else {
     
-    # Is it on quadratic?
-    if () {
+    # Is it on distance(2)?
+    if (2 == $dest) {
+      header('Location: distance.php');
+      die;
     
     } else {
-    
+      
+      # Is it on slope(3)?
+      if (3 == $dest) {
+        header('Location: slope.php');
+        die;
+      } else {
+        echo "Error: Please choose a destination!";
+      };
     };
   };
 };
@@ -31,5 +44,18 @@ if (isset(go) {
     <hr />
     <br /><br />    
      
+    <form method="GET" action="index.php">
+      <select name="link">
+        
+        <option value="DISABLED" disabled>Choose a function</option>
+        <option value="1">Quadratic</option>
+        <option value="2">Distance</option>
+        <option value="3">Slope</option>
+
+      </select>  
+      <input type="submit" name="go" value="Submit">
+    </form>
+    
+    
   </body>
 </html>
