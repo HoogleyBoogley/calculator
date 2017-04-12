@@ -1,34 +1,34 @@
 <?php
 
 # Is the button pressed
-if (isset(go) {
+# if (isset(go) {
   
-  $dest = $_GET['link'];
+#  $dest = $_GET['link'];
   
   # Is it on quadratic(1)?
-  if (1 == $dest) {
-    header('Location: quadratic.php');
-    die;
+#  if (1 == $dest) {
+#    header('Location: quadratic.php');
+#    die;
   
-  } else {
+#  } else {
     
     # Is it on distance(2)?
-    if (2 == $dest) {
-      header('Location: distance.php');
-      die;
+#    if (2 == $dest) {
+#      header('Location: distance.php');
+#      die;
     
-    } else {
+#    } else {
       
       # Is it on slope(3)?
-      if (3 == $dest) {
-        header('Location: slope.php');
-        die;
-      } else {
-        echo "Error: Please choose a destination!";
-      };
-    };
-  };
-};
+#      if (3 == $dest) {
+#        header('Location: slope.php');
+#        die;
+#      } else {
+#        header('Location: redirect.php');
+#      };
+#    };
+#  };
+#};
 ?>
 
 <!DOCTYPE html>
@@ -44,7 +44,7 @@ if (isset(go) {
     <hr />
     <br /><br />    
      
-    <form method="GET" action="index.php">
+    <form method="GET" action="redirect.php">
       <select name="link">
         
         <option value="DISABLED" disabled>Choose a function</option>
